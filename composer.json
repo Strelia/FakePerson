@@ -1,0 +1,16 @@
+{
+    "name": "strelia/fake-person",
+    "authors": [
+        {
+            "name": "Strelia",
+            "email": "strelchenko.vitaliy.95@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"Strelia\\": "src/"}
+    },
+    "require": {
+        "php": "=5.5",
+        "php-curl-class/php-curl-class": "^8.0"
+    }
+}
