@@ -3,6 +3,7 @@
 namespace Strelia;
 
 use Strelia\API\AProvider;
+use Strelia\API\FakerProvider;
 use Strelia\API\NamefakeProvider;
 use Strelia\API\RandomuserProvider;
 use Strelia\API\UinamesProvider;
@@ -16,7 +17,8 @@ class PersonFactory
             $this->providers = [
                 new NamefakeProvider(),
                 new RandomuserProvider(),
-                new UinamesProvider()
+                new UinamesProvider(),
+                new FakerProvider
             ];
         } else {
             $this->providers = [];
@@ -33,6 +35,6 @@ class PersonFactory
          */
         $provider = $this->providers[rand(0, count($this->providers) - 1)];
 
-        return $provider->getFormatedUser();
+        return $provider->getFormattedUser();
     }
 }

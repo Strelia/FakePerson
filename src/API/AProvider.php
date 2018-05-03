@@ -100,6 +100,6 @@ abstract class AProvider
      *
      * @return array
      */
-    abstract public function getFormatedUser();
+    abstract public function getFormattedUser();
 
 }

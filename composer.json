@@ -11,6 +11,7 @@
     },
     "require": {
         "php": "=5.5",
-        "php-curl-class/php-curl-class": "^8.0"
+        "php-curl-class/php-curl-class": "^8.0",
+        "fzaninotto/faker": "^1.7"
     }
 }

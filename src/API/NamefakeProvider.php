@@ -23,7 +23,7 @@ class NamefakeProvider extends AProvider
      * @return array
      * @throws \Exception
      */
-    public function getFormatedUser()
+    public function getFormattedUser()
     {
         $responseUser = $this->generateUser();
 
